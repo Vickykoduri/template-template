@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<title>form</title>
+    </head>
+    <style>
+        #g{
+            background-color: blueviolet;
+
+        }
+
+        input{
+            color: blueviolet;
+        }
+    </style>
+<body>
+    <div id="g">
+    <form>
+        <label>Email: </label>
+        <input type ="email" id="ema"><br><br>
+        <label> password:</label>
+        <input type="password" id="psw"><br><br>
+        <input type="button" onclick="subform()"value="sign in" style=margin-left:200px;>
+
+    </form>
+    </div>
+
+
+    <script>
+        function subform(){
+     var name=document.getElementById("ema").value;
+     var password=document.getElementById("psw").value;
+     document.getElementById("g").innerHTML= `google mail :${name},<br>
+     password is: ${password}`;
+        }
+    </script>
+</body>
+    </html>

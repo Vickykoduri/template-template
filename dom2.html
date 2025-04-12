@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>welcome to java script</title>
+        <h1 class="h">hello</h1>
+        <style>
+            
+            #g {
+                font-size: smaller;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: blue;
+                text-align: center;
+                background-color: rgb(250, 215, 228);
+                padding: 3%;
+            }  
+
+            body{
+                background-color:bisque;
+            }
+
+            .h{
+                text-align: center;
+                font-size: medium;
+            }
+            </style>
+            
+    </head>
+   <body >
+<h1>general qutations</h1>
+   <div  id="g"></div>
+    <button type ="button" onclick="qutation()">convert </button>               
+       
+        <script>
+        
+   function qutation(){
+    const quotes=["life is getting maturity","when u get more experience then u get more precious",
+    "be loyal","don't trust anyone more than yourself","learn from mistakes"];
+    var rand=Math.floor(Math.random()*quotes.length);
+    document.getElementById("g").innerHTML=quotes[rand];
+    
+   
+        
+       }
+       
+    
+
+        </script>
+        
+        </body>
+    
+</html>                                                                                                                                                                             
